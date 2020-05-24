@@ -1,21 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 import './App.css';
 
 import Homegrid from "./pages/js/Homegrid";
 import Projectpage from "./pages/js/Projectpage";
 import EmailForm from "./pages/js/EmailForm";
+import Nav from "./components/js/Nav.js";
+import Footer from "./components/js/Footer.js";
 
 function App() {
   return (
+  
+      <HashRouter basename="/Homegrid">
     <div className="App">
-      <Router>
-        <Route path="/homegrid" component={Homegrid}/>
-        <Route path="/projectpage" component={Projectpage}/>
-        <Route path = "/emailform" component={EmailForm}/>
-        </Router>
+      <Nav />
+      <Footer />
+        <Route path="/homegrid" exact component={Homegrid}/>
+        <Route path="/projectpage" exact component={Projectpage}/>
+        <Route path = "/emailform" exact component={EmailForm}/>
     </div>
+    </HashRouter>
   );
 }
 
