@@ -6,7 +6,7 @@
     grid-auto-flow: dense;
 }
 
-.image{
+.image {
     overflow: hidden;
     display: grid;
     grid-template-columns: 1;
@@ -14,10 +14,34 @@
 
 }
 
-.image img{
+.image img {
     grid-column: 1/-1;
     grid-row: 1/-1;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.image.v2 {
+    grid-row: span 2;
+}
+
+.image.v3 {
+    grid-row: span 3;
+}
+
+.image.v4 {
+    grid-row: span 4;
+}
+
+.image.h2 {
+    grid-column: span 2;
+}
+
+.image.h3 {
+    grid-column: span 3;
+}
+
+.image.h4 {
+    grid-column: span 4;
 }
