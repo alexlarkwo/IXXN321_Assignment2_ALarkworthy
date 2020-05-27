@@ -1,4 +1,8 @@
-.gallery{
+.materials{
+    display: grid;
+}
+
+/* .gallery{
     background-color:  #9BE1FF;
     display: grid;
     grid-template-columns: repeat(auto-fill, 100px);
@@ -44,4 +48,4 @@
 
 .image.h4 {
     grid-column: span 4;
-}
+} */
