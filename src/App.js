@@ -1,7 +1,7 @@
-import React from 'react';
-import { HashRouter, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import './App.css';
+import "./App.css";
 
 import Homegrid from "./pages/js/Homegrid.js";
 import Projectpage from "./pages/js/Projectpage.js";
@@ -11,18 +11,15 @@ import Footer from "./components/js/Footer.js";
 
 function App() {
   return (
-  
-      <HashRouter basename="/Homegrid">
-    <div className="App">
-      <Nav />
-      <Footer />
-      {/* <EmailForm/> */}
-
-        <Route path="/homegrid" exact component={Homegrid}/>
-        <Route path="/projectpage" exact component={Projectpage}/>
-        {/* <Route path = "/emailform" exact component={EmailForm}/> */}
-    </div>
-    </HashRouter>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Route path="/" exact component={Homegrid} />
+        <Route path="/projectpage" exact component={Projectpage} />
+        {/* <Route path = "/emailform" exact component={EmailForm}/>  */}
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

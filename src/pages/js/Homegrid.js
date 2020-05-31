@@ -1,35 +1,42 @@
-import React from 'react' 
-import burntmetal from '../../images/burntmetal.jpeg';
-import lungs from '../../images/lungs.jpeg';
-import light from '../../images/light.jpeg';
-import ring from '../../images/ring.jpeg';
+import React from "react";
+
+import burntmetal from "../../images/burntmetal.png";
+import lungs from "../../images/lungs.png";
+import light from "../../images/light.png";
+import ring from "../../images/ring.png";
 
 import "../css/Homegrid.css";
-// import Images from "../../components/js/Images.js";
-
-
 
 export default function Homegrid() {
-    return (
-        <div className="gallery">
-    {/* <Images/> */}
-    <a href ="/#/Projectpage">
-        <img src='../../images/burntmetal.jpeg' className="materials" alt="burnt metal"/>
-    </a>
+  return (
+    <div className="gallery">
+      <a href="/#/Projectpage">
+        <img
+          src={burntmetal}
+          className="materials gallery-image"
+          alt="burnt metal"
+        />
+      </a>
 
-    <a href ="/#/Projectpage">
-        <img src='../../images/lungs.jpeg' className="materials" alt="image of geometric 3d prints"/>
-    </a>
+      <a href="/#/Projectpage">
+        <img
+          src={lungs}
+          className="materials gallery-image"
+          alt="image of geometric 3d prints"
+        />
+      </a>
 
-    <a href ="/#/Projectpage">
-        <img src={light} className="jpeg" alt="clear plastic with blue light shining through"/>
-    </a>
+      <a href="/#/Projectpage">
+        <img
+          src={light}
+          className="gallery-image"
+          alt="clear plastic with blue light shining through"
+        />
+      </a>
 
-    <a href ="/#/Projectpage">
-        <img src={ring} className="materials" alt="silver ring on finger"/>
-    </a>
-
-           
-        </div>
-    )
+      <a href="/#/Projectpage">
+        <img src={ring} className="materials gallery-image" alt="silver ring on finger" />
+      </a>
+    </div>
+  );
 }

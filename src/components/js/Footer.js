@@ -6,7 +6,7 @@ const Footer = () =>{
 <div className ='footer'>
 
 <a href= "/#/EmailForm">
-<button class="getInTouch"> <span> Get in Touch! </span> </button>
+<button className="getInTouch"> <span> Get in Touch! </span> </button>
 </a>
 
 <img src={require('../../images/linebreak.png')} className="line-image" alt="image of white line"/>

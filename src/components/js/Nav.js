@@ -1,19 +1,28 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 import "../css/Nav.css";
-
-const Nav = (props) => (
-<header className="navbox">
+import home from "../../images/navigation-home.png";
+import logo from "../../images/alexlarkworthylogo.png"
+const Nav = () => (
+  <header className="navbox">
     <nav className="navigation">
-    <div></div>
-    <div className="nav-logo">
-        <a href="/#/Homegrid"><img src={require('../../images/alexlarkworthylogo.png')} className ="logo-image" alt="designed logo"/> </a>
-    </div>
-    <div className="nav-home-logo">
-        <a href="/#/Homegrid"><img src={require('../../images/navigation-home.png')} className ="home-image" alt="image of house"/></a>
-    </div>
+      <div></div>
+      <div className="nav-logo">
+        <Link to="/">
+          <img
+            src={logo}
+            className="logo-image"
+            alt="designed logo"
+          />{" "}
+        </Link>
+      </div>
+      <div className="nav-home-logo">
+        <Link to="/">
+          <img src={home} className="home-image" alt="image of house" />
+        </Link>
+      </div>
     </nav>
-</header>
-)
+  </header>
+);
 
-export default Nav; 
-
+export default Nav;
