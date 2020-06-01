@@ -1,19 +1,23 @@
-.materials{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 1;
-    width: 100%;
-    height: 100%;
+.materials {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+  width: 100%;
+  height: 100%;
 }
 
-.gallery{
-    background-color:  #9BE1FF;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 100px);
-    grid-auto-rows: 100px;
-    grid-auto-flow: dense;
+.gallery {
+  position: relative;
+  background-color: #9be1ff;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-auto-rows: 100px;
+  grid-auto-flow: dense;
 }
 
+.gallery-image {
+  max-width: 70px;
+}
 /* .image {
     overflow: hidden;
     display: grid;

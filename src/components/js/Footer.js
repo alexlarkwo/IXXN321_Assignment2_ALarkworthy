@@ -11,11 +11,17 @@ const Footer = () => {
         </button>
       </a>
 
+<<<<<<< HEAD
       <img
         src={require("../../images/linebreak.png")}
         className="line-image"
         alt="image of white line"
       />
+=======
+<a href= "/#/EmailForm">
+<button className="getInTouch"> <span> Get in Touch! </span> </button>
+</a>
+>>>>>>> e43611b76abb77742e5fed368124924bbaa8b1e3
 
       <div className="footer-text">
         <p>I'd love to hear from you! </p>
