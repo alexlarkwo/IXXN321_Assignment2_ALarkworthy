@@ -1,6 +1,8 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component, PropTypes } from 'react';
 
-export default class Button extends Component {
+
+class Button extends Component {
+
   static propTypes = {
     email: PropTypes.string.isRequired,
     formValues: PropTypes.shape({
@@ -19,7 +21,7 @@ export default class Button extends Component {
   }
 
   logFormDataToConsole(event) {
-    console.log("Form Values", this.props.formValues);
+    console.log('Form Values', this.props.formValues);
     this.setState({ isClicked: true });
   }
 
@@ -34,3 +36,5 @@ export default class Button extends Component {
     );
   }
 }
+
+export default Button;
